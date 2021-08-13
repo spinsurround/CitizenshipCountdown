@@ -1,0 +1,14 @@
+#block {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
+h1 {
+    font-size: xx-large;
+    text-align: center;
+}
+#countdown {
+    font-size: x-large;
+    text-align: center;
+}
