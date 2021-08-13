@@ -3,4 +3,4 @@ let diffInDays = Math.floor((applicationDate - Date.now())/(1000*60*60*24));
 
 diffInDays = Math.max(0, diffInDays);
 
-document.getElementById("countdown").textContent = `${diffInDays} Days`;
+document.getElementById("countdown").textContent = `${diffInDays - 90} Days`;
