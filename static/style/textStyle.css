@@ -4,11 +4,13 @@
     border: 3px solid green;
     padding: 10px;
 }
+
 h1 {
-    font-size: xx-large;
+    font-size: 500%;
     text-align: center;
 }
+
 #countdown {
-    font-size: x-large;
+    font-size: 300%;
     text-align: center;
 }
