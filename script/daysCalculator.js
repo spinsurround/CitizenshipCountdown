@@ -3,4 +3,7 @@ let diffInDays = Math.floor((applicationDate - Date.now())/(1000*60*60*24)) - 90
 
 diffInDays = Math.max(0, diffInDays);
 
-document.getElementById("countdown").textContent = `${diffInDays} Days`;
+years = Math.floor(diffInDays/365)
+days = diffInDays%365
+
+document.getElementById("countdown").textContent = `${years} years ${days} days until 03-22-2025`;
