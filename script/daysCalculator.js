@@ -1,6 +1,16 @@
-let fiveYearAfterGC = new Date(2025, 03, 22);
-let applicationDate = new Date(fiveYearAfterGC.getTime() - 90*1000*60*60*24);
-let diffInDays = Math.floor((applicationDate - Date.now())/(1000*60*60*24));
+
+
+function convertDaysToMilisec(days) {
+	return days*1000*60*60*24;
+}
+
+function convertMilisecToDays(ms) {
+	return Math.floor(ms/(1000*60*60*24));
+}
+
+let fiveYearAfterGC = new Date(2025, 02, 22);
+let applicationDate = new Date(fiveYearAfterGC - convertDaysToMilisec(90));
+let diffInDays = convertMilisecToDays(applicationDate - Date.now());
 
 diffInDays = Math.max(0, diffInDays);
 
